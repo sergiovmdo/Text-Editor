@@ -8,13 +8,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 
-public class editor extends JFrame implements ActionListener {
+public class Editor extends JFrame implements ActionListener {
 
     JFrame frame;
     JPanel panel;
     //JTextArea ta;
     RSyntaxTextArea ta;
-    editor(){
+    Editor(){
 
         frame = new JFrame("Text editor by Sergiovmdo");
         panel = new JPanel(new BorderLayout());
@@ -166,7 +166,7 @@ public class editor extends JFrame implements ActionListener {
         else if (command.equals("Close")) frame.setVisible(false);
 
         else if(command.equals("New Window")){
-            editor e2 = new editor();
+            Editor e2 = new Editor();
 
         }
 
@@ -195,7 +195,7 @@ public class editor extends JFrame implements ActionListener {
     }
 
     public static void main(String arg[]){
-        editor e = new editor();
+        Editor e = new Editor();
 
     }
 }
